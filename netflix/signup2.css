@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: Netflix Sans, Helvetica Neue, sans-serif;
+}
+
+.hdr {
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 5%;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.logo {
+    height: 36px;
+    width: 142px;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -26px;
+}
+
+.btn button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 3%;
+    width: 780px;
+    height: 470px;
+    background-color: #fff;
+}
+
+.p {
+    font-size: 11px;
+}
+
+/*
+        .body{
+             margin-left: 90px;
+        }
+*/
+.tic {
+    color: red;
+    font-size: 30px;
+}
+
+input {
+    margin-left: 240px;
+    margin-top: 20px;
+    width: 320px;
+    height: 47px;
+    background-color: #333;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 250px;
+    height: 45px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+
+.form a {
+    float: left;
+    margin-top: 0px;
+    margin-right: 28px;
+    color: rgb(125, 119, 119);
+    text-decoration: none;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    color: #4a4a4a;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+    color: red;
+}
+
+.as {
+    font-size: 12px;
+    color: darkgray;
+}
+
+th {
+    background: white;
+    position: sticky;
+    top: 0;
+    /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 500) {
+    .logo {
+        width: 92px;
+        height: 22px;
+        padding-left: 20px;
+        /* margin-bottom: 20px; */
+    }
+
+    .container {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 10px;
+    }
+
+}
+
+/*@media Query*/
+
+@media only screen and (max-width: 640px) {
+
+    .logo {
+        width: 92px;
+        height: 22px;
+        padding-left: 20px;
+        /* margin-bottom: 20px; */
+    }
+
+    nav button {
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .container {
+
+        width: auto;
+        height: 430px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 10px;
+
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 10px;
+    }
+
+    table {
+        position: auto;
+        padding: 0px;
+        margin-right: 20%;
+
+    }
+
+    input {
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 320px;
+        height: 47px;
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+        border-top: 2px solid #333;
+        /*     background-color: black;*/
+        color: #777;
+    }
+
+
+}

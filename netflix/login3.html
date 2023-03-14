@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Netflix Clone </title>
+    <link rel="icon" type="image/x-icon" href="images/icon1.png">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.png">-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <div class="wpr">
+        <div class="hdr">
+            <div class="logo">
+                <a href="#"> <img src="images/logo.png" alt=""> </a>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="box">
+                <h2>Sign In</h2>
+                <form action="home.html" method="post">
+                    <div class="wrap">
+                        <input type="email" placeholder=" Email or phone Number" required>
+                    </div>
+                    <div class="wrap">
+                        <input title="password" placeholder=" Password" required>
+                    </div>
+                    <div class="wrap">
+                        <button> Sign In</button>
+                    </div>
+                    <div class="support">
+                        <!-- <div class="support"> -->
+                        <!-- <input type="checkbox" checked="checked">
+                            <p>Remember me</p> -->
+
+                        <label class="support">
+                            <input type="checkbox" checked="checked">
+                            &nbsp;Remember me
+                        </label>
+
+                        <!-- </div> -->
+                        <div class="ck">
+                            <a href="index.html" style="color: #b3b3b3;">Need help?</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="a"> New to Netflix? <a class="as" href="nsignup.html">Sign up now.</a></p>
+                        <br>
+                        <p class="h2">This page is protected by Google reCAPTCHA to <br>ensure you're not a bot.<a
+                                style=" color: #0071eb;" id="toggle"> Learn more.</a></p>
+                        <br>
+                        <div class="hidden rightButton" id="hd">
+                            <div class="hd">The information collected by Google reCAPTCHA is subject to the Google
+                                <a style="color: blue;">Privacy Policy</a> and <a style="color: blue;">Terms of
+                                    Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA
+                                service and for <br>general security purposes (it is not used for personalized
+                                advertising by Google).
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <div class="footer">
+            <a href="#">
+                <h2>Questions? Contact us.</h2>
+            </a>
+            <div class="row">
+                <div class="col">
+                    <a href="#">FQA</a>
+                    <a href="#">Cookie Preferences</a>
+                    <!--
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+-->
+                </div>
+
+                <div class="col">
+                    <a href="#">Help Center</a>
+                    <a href="#">Corporate Information</a>
+                    <!--
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+-->
+                </div>
+
+                <div class="col">
+                    <a href="#">Terms of Use</a>
+                    <!--
+            <a href="#">Ways to Watch </a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix </a>
+-->
+                </div>
+
+                <div class="col">
+                    <a href="#">Privacy</a>
+                    <!--
+            <a href="#">Terms of Use </a>
+            <a href="#">Contact Us</a>
+            <a href="#">Speed </a>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("#hd").toggleClass("hidden unhidden");
+            });
+        });
+
+
+//        $(document).ready(function(){
+//  $("#toggle").click(function(){
+//    $(".tgl").toggle();
+//  });
+//});
+
+    </script>
+</body>
+
+</html>

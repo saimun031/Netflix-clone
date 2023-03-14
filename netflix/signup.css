@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #fff;
+
+    font-family: Netflix Sans, Helvetica Neue, sans-serif;
+}
+
+.logo img {
+    height: 36px;
+    width: 142px;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -26px;
+
+
+}
+
+.hdr {
+    padding: 28px 58px;
+    position: relative;
+    /*            z-index: 10;*/
+
+}
+
+.wpr {
+    background-image: url(images/header-image.png);
+    height: 100%;
+    width: 100%;
+    background-image: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wpr:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.body {
+    /*            padding: 20px;*/
+    padding-top: 50px;
+    padding-left: 55px;
+    padding-right: 30px;
+    /*            z-index: 98;*/
+    position: relative;
+    max-width: 350px;
+    height: 600px;
+    margin-left: 36%;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    /*
+            box-sizing: border-box;
+            transform: translateX(-50%);
+    */
+}
+
+.body h2 {
+    font-size: 26px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.body input {
+    height: 40px;
+    width: 240px;
+    border-radius: 4px;
+    color: white;
+    background: #333;
+    border: 1px solid #333;
+    padding-left: 13px;
+    box-sizing: border-box;
+    /*            outline: none;*/
+
+}
+
+.wrap input {
+    margin-bottom: 15px;
+
+}
+
+.wrap button {
+    margin-top: 25px;
+
+}
+
+.body button {
+    height: 40px;
+    width: 240px;
+    color: white;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #e50914;
+}
+
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.support a {
+    font-size: 10px;
+    margin-top: 80px;
+}
+
+.support input {
+    width: 12px;
+    height: 12px;
+    padding-left: 100px;
+
+}
+
+.support p {
+
+    padding-left: 4px;
+    font-size: 10px;
+}
+
+.support input[type=checkbox] {
+    background-color: #000 !important;
+    color: #000;
+}
+
+label::after {
+    display: none;
+}
+
+.ck {
+    margin-top: 6px;
+    padding-right: 25px;
+
+}
+
+/*
+        .ck span{
+            margin-right: 10px;
+            height: 25px;
+        }
+*/
+.help {
+    padding-left: 110px;
+}
+
+/*
+                .content{
+            position: absolute;
+           
+        }
+*/
+.content {
+    padding-top: 50px;
+}
+
+.a {
+    color: #928989;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.as {
+    color: white;
+    text-decoration: none;
+    font-size: 12.5px;
+}
+
+.h2 {
+    color: #928989;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.hd {
+
+    font-size: 10px;
+    color: #b3b3b3;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.unhidden {
+    display: block;
+}
+
+.footer h2 {
+    color: #8c8a8afb;
+}
+
+.footer a {
+    color: #8f8d8dfb;
+}
+
+@media only screen and (max-width: 700px) {
+    .hdr {
+        background-color: black;
+        background-image: none;
+    }
+
+    .wpr {
+        background-color: black;
+        background-image: none;
+    }
+
+    .body {
+        width: 530px;
+        height: 460px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 16px;
+        margin-bottom: 50px;
+
+
+    }
+
+    .logo img {
+        width: 90px;
+        height: 30px;
+        /*                padding-right: 80px;*/
+        /* margin-bottom: 20px; */
+    }
+
+    .body {
+        padding-top: 20px;
+        padding-left: 7px;
+        padding-right: 10px;
+    }
+
+    .body input {
+        height: 50px;
+        width: 100%;
+
+    }
+
+    .body button {
+        height: 50px;
+        width: 100%;
+
+    }
+
+    .body h2 {
+        font-size: 28px;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .hdr {
+        /*            padding: 10px 20px;*/
+        padding-bottom: 0px;
+        padding-left: 16px;
+        /*            position: relative;*/
+        /*            z-index: 10;*/
+
+    }
+
+    .support {
+        display: flex;
+        color: #b3b3b3;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .support input {
+        width: 15px;
+        height: 15px;
+        padding-left: 100px;
+    }
+
+    .support p {
+
+        padding-left: 10px;
+    }
+
+    .ck {
+        padding-right: 2px;
+
+    }
+
+
+}

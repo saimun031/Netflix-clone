@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: Netflix Sans, Helvetica Neue, sans-serif;
+}
+
+.hdr {
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 5%;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.logo {
+    height: 36px;
+    width: 142px;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -26px;
+}
+
+.btn button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    margin-left: 30%;
+    margin-top: 1%;
+    width: 400px;
+    height: 410px;
+    background-color: #fff;
+}
+
+.container h1 {
+    color: #000;
+
+}
+
+.container .p {
+    color: #000;
+    font-size: 12px;
+
+
+}
+
+.body {
+    margin-left: 90px;
+}
+
+.tic {
+    color: red;
+    font-size: 30px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.form1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.fullwidth {
+    grid-column: span 2;
+}
+
+input,
+textarea {
+    padding: 4px;
+    height: 45px;
+}
+
+
+input[type=submit] {
+    width: 420px;
+    height: 50px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 16px;
+    border-radius: 5px;
+}
+
+.form a {
+    float: right;
+    margin-top: 0px;
+    margin-right: 28px;
+    color: rgb(125, 119, 119);
+    text-decoration: none;
+}
+
+/*@media Query*/
+@media only screen and (max-width: 700px) {
+    .logo {
+        width: 92px;
+        height: 22px;
+        padding-left: 20px;
+        /* margin-bottom: 20px; */
+
+    }
+
+    nav button {
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    .container {
+        width: auto;
+        height: 310px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-right: 20%;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 10px;
+    }
+
+    .form1 {
+        width: 217%;
+        height: auto;
+        font-size: 10px;
+        font-weight: bold;
+        position: auto;
+    }
+
+
+    input {
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        font-weight: bold;
+        position: auto;
+    }
+
+
+
+    input[type=submit] {
+        width: 190px;
+        height: 40px;
+        background-color: #e50914;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+}
